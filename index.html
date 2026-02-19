@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon de Thé | Thés & Infusions</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts : typographie élégante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête du site -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Salon de Thé</h1>
+            <p class="tagline">L'art de l'infusion</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Section catalogue produits -->
+            <section class="catalogue">
+                <h2 class="section-title">Nos thés & infusions</h2>
+                <div class="products-grid" id="products-grid">
+                    <!-- Les produits sont générés par JavaScript -->
+                </div>
+            </section>
+
+            <!-- Panier fixe (visible sur la page) -->
+            <aside class="cart-section" id="cart-section">
+                <div class="cart-header">
+                    <h3 class="cart-title">Votre panier</h3>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+                <div class="cart-content" id="cart-content">
+                    <p class="cart-empty" id="cart-empty">Votre panier est vide</p>
+                    <ul class="cart-items" id="cart-items"></ul>
+                    <div class="cart-footer" id="cart-footer" style="display: none;">
+                        <div class="cart-total">
+                            <span>Total</span>
+                            <span id="cart-total">0 €</span>
+                        </div>
+                        <button type="button" class="btn-whatsapp" id="btn-whatsapp">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <p>Salon de Thé — Thés & Infusions d'exception</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
