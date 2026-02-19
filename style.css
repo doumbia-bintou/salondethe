@@ -183,6 +183,87 @@ h1, h2, h3 {
 }
 
 /* ============================================
+   À propos - Esprit du salon
+   Texte à gauche, image à droite
+   ============================================ */
+.about {
+    background: var(--color-beige-light);
+    padding: var(--space-xl) 0;
+}
+
+.about-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+/* Texte à gauche sur desktop */
+.about-content {
+    padding: 0;
+}
+
+.about-title {
+    font-size: 1.9rem;
+    color: var(--color-green-deep);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.about-text {
+    color: var(--color-text);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.about-text:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Image à droite sur desktop */
+.about-image-wrap {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Deux colonnes sur tablette et desktop */
+@media (min-width: 768px) {
+    .about-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .about-content {
+        padding-right: 1rem;
+    }
+}
+
+/* Mobile : image sous le texte */
+@media (max-width: 767px) {
+    .about {
+        padding: 2rem 0;
+    }
+
+    .about-inner {
+        gap: 2rem;
+    }
+
+    .about-image-wrap {
+        order: 2;
+    }
+}
+
+/* ============================================
    Main - Espace blanc, calme et aéré
    ============================================ */
 .main {
