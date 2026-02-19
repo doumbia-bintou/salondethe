@@ -116,6 +116,75 @@ h1, h2, h3 {
 }
 
 /* ============================================
+   Hero - Section d'accueil immersive
+   Image plein écran, texte centré
+   ============================================ */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Image d'ambiance : salon de thé, tasse, livre, lumière douce */
+    background-image: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1920");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Voile sombre pour la lisibilité du texte */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Contenu centré au-dessus de l'image */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--color-white);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    color: var(--color-beige-light);
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+/* Bouton élégant, style premium */
+.hero-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #25D366;
+    color: white !important;
+    text-decoration: none;
+    border-radius: var(--radius-btn);
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: background var(--transition), transform 0.2s;
+    letter-spacing: 0.03em;
+}
+
+.hero-btn:hover {
+    background: #20bd5a;
+    transform: translateY(-2px);
+}
+
+/* ============================================
    Main - Espace blanc, calme et aéré
    ============================================ */
 .main {
@@ -414,6 +483,10 @@ h1, h2, h3 {
    Responsive mobile
    ============================================ */
 @media (max-width: 767px) {
+    .hero {
+        min-height: 60vh;
+    }
+
     .header {
         padding: 1.5rem 0;
     }
