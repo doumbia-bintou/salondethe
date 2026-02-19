@@ -1,5 +1,5 @@
 /**
- * Salon de Thé - Logique du panier et envoi WhatsApp
+ * Le Havre de Thé - Logique du panier et envoi WhatsApp
  * Code commenté pour faciliter les modifications par une débutante
  */
 
