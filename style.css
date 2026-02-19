@@ -95,24 +95,22 @@ h1, h2, h3 {
     max-width: 28ch;
 }
 
-/* Bouton WhatsApp dans le header */
-.btn-whatsapp-header {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.75rem 1.5rem;
-    background: #25D366;
-    color: white !important;
+/* Lien Commander - discret et élégant */
+.header-link {
+    color: var(--color-beige-light);
     text-decoration: none;
-    border-radius: var(--radius-btn);
-    font-weight: 600;
     font-size: 0.95rem;
-    transition: background var(--transition), transform 0.2s;
-    white-space: nowrap;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid transparent;
+    transition: color var(--transition), border-color var(--transition), opacity var(--transition);
 }
 
-.btn-whatsapp-header:hover {
-    background: #20bd5a;
-    transform: translateY(-1px);
+.header-link:hover {
+    color: var(--color-white);
+    border-bottom-color: var(--color-beige-light);
+    opacity: 1;
 }
 
 /* ============================================
@@ -508,9 +506,8 @@ h1, h2, h3 {
         font-size: 1.65rem;
     }
 
-    .btn-whatsapp-header {
-        width: 100%;
-        justify-content: center;
+    .header-link {
+        align-self: center;
     }
 
     .products-grid {
