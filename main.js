@@ -11,64 +11,65 @@
  * Images : photos libres Unsplash (source.unsplash.com)
  * Modifier les URLs : unsplash.com/photos/ID → source.unsplash.com/ID/600x400
  */
-const PRODUCTS = [
-    {
-        id: 1,
-        name: "Infusion pomme, cannelle et figue",
-        description: "Une douceur automnale aux saveurs réconfortantes.",
-        price: 5,
-        image: "https://source.unsplash.com/oVACw86wCB0/600x400"
-    },
-    {
-        id: 2,
-        name: "Infusion camomille, fleur d'oranger",
-        description: "Apaisante et délicate, pour un moment de détente.",
-        price: 5,
-        image: "https://source.unsplash.com/hVvEuOKQCEk/600x400"
-    },
-    {
-        id: 3,
-        name: "Thé à la menthe et au citron vert",
-        description: "Fraîcheur et vitalité dans une tasse.",
-        price: 4,
-        image: "https://source.unsplash.com/fDWtPLCPgKU/600x400"
-    },
-    {
-        id: 4,
-        name: "Thé à la vanille",
-        description: "Doux et onctueux, un délice gourmand.",
-        price: 4,
-        image: "https://source.unsplash.com/rzrTDMWZZgU/600x400"
-    },
-    {
-        id: 5,
-        name: "Thé aux fruits rouges",
-        description: "Notes acidulées et fruitées.",
-        price: 4,
-        image: "https://source.unsplash.com/oVACw86wCB0/600x400"
-    },
-    {
-        id: 6,
-        name: "Infusion bissap, clou de girofle, menthe",
-        description: "Exotique et rafraîchissante.",
-        price: 5,
-        image: "https://source.unsplash.com/oVACw86wCB0/600x400"
-    },
-    {
-        id: 7,
-        name: "Infusion kinkéliba, gingembre, citron, clou de girofle",
-        description: "Tonifiante aux saveurs d'Afrique.",
-        price: 6,
-        image: "https://source.unsplash.com/rzrTDMWZZgU/600x400"
-    },
-    {
-        id: 8,
-        name: "Infusion au curcuma et citron",
-        description: "Digestive et réconfortante.",
-        price: 5,
-        image: "https://source.unsplash.com/jd_V5Ui3pe4/600x400"
-    }
-];
+    const PRODUCTS = [
+        {
+            id: 1,
+            name: "Infusion pomme, cannelle et figue",
+            description: "Une douceur automnale aux saveurs réconfortantes.",
+            price: 5,
+            image: "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+            id: 2,
+            name: "Infusion camomille, fleur d'oranger",
+            description: "Apaisante et délicate, pour un moment de détente.",
+            price: 5,
+            image: "https://images.unsplash.com/photo-1507914372368-b2b085b925a1?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+            id: 3,
+            name: "Thé à la menthe et au citron vert",
+            description: "Fraîcheur et vitalité dans une tasse.",
+            price: 4,
+            image: "https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+            id: 4,
+            name: "Thé à la vanille",
+            description: "Doux et onctueux, un délice gourmand.",
+            price: 4,
+            image: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+            id: 5,
+            name: "Thé aux fruits rouges",
+            description: "Notes acidulées et fruitées.",
+            price: 4,
+            image: "https://images.unsplash.com/photo-1505253216365-5b0f7c5f1e5f?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+            id: 6,
+            name: "Infusion bissap, clou de girofle, menthe",
+            description: "Exotique et rafraîchissante.",
+            price: 5,
+            image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+            id: 7,
+            name: "Infusion kinkéliba, gingembre, citron, clou de girofle",
+            description: "Tonifiante aux saveurs d'Afrique.",
+            price: 6,
+            image: "https://images.unsplash.com/photo-1523920290228-4f321a939b4c?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+            id: 8,
+            name: "Infusion au curcuma et citron",
+            description: "Digestive et réconfortante.",
+            price: 5,
+            image: "https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&w=600&q=80"
+        }
+    ];
+    
 
 /* ============================================
    PANIER
