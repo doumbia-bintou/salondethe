@@ -521,3 +521,41 @@ h1, h2, h3 {
         position: static;
     }
 }
+/* Section hero */
+.hero {
+    background-image: url("images/the1.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.35);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: #f5f1e8;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+}
