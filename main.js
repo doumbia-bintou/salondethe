@@ -7,54 +7,66 @@
    DONNÉES DES PRODUITS
    À modifier pour ajouter/supprimer des produits
    ============================================ */
+/**
+ * Images : photos libres Unsplash (source.unsplash.com)
+ * Modifier les URLs : unsplash.com/photos/ID → source.unsplash.com/ID/600x400
+ */
 const PRODUCTS = [
     {
         id: 1,
         name: "Infusion pomme, cannelle et figue",
         description: "Une douceur automnale aux saveurs réconfortantes.",
-        price: 5
+        price: 5,
+        image: "https://source.unsplash.com/oVACw86wCB0/600x400"
     },
     {
         id: 2,
         name: "Infusion camomille, fleur d'oranger",
         description: "Apaisante et délicate, pour un moment de détente.",
-        price: 5
+        price: 5,
+        image: "https://source.unsplash.com/hVvEuOKQCEk/600x400"
     },
     {
         id: 3,
         name: "Thé à la menthe et au citron vert",
         description: "Fraîcheur et vitalité dans une tasse.",
-        price: 4
+        price: 4,
+        image: "https://source.unsplash.com/fDWtPLCPgKU/600x400"
     },
     {
         id: 4,
         name: "Thé à la vanille",
         description: "Doux et onctueux, un délice gourmand.",
-        price: 4
+        price: 4,
+        image: "https://source.unsplash.com/rzrTDMWZZgU/600x400"
     },
     {
         id: 5,
         name: "Thé aux fruits rouges",
         description: "Notes acidulées et fruitées.",
-        price: 4
+        price: 4,
+        image: "https://source.unsplash.com/oVACw86wCB0/600x400"
     },
     {
         id: 6,
         name: "Infusion bissap, clou de girofle, menthe",
         description: "Exotique et rafraîchissante.",
-        price: 5
+        price: 5,
+        image: "https://source.unsplash.com/oVACw86wCB0/600x400"
     },
     {
         id: 7,
         name: "Infusion kinkéliba, gingembre, citron, clou de girofle",
         description: "Tonifiante aux saveurs d'Afrique.",
-        price: 6
+        price: 6,
+        image: "https://source.unsplash.com/rzrTDMWZZgU/600x400"
     },
     {
         id: 8,
         name: "Infusion au curcuma et citron",
         description: "Digestive et réconfortante.",
-        price: 5
+        price: 5,
+        image: "https://source.unsplash.com/jd_V5Ui3pe4/600x400"
     }
 ];
 
@@ -79,12 +91,17 @@ function renderProducts() {
         const card = document.createElement("article");
         card.className = "product-card";
         card.innerHTML = `
-            <h3 class="product-name">${product.name}</h3>
-            <p class="product-description">${product.description}</p>
-            <p class="product-price">${product.price} €</p>
-            <button type="button" class="btn-add" data-id="${product.id}">
-                Ajouter au panier
-            </button>
+            <div class="product-image-wrap">
+                <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+            </div>
+            <div class="product-body">
+                <h3 class="product-name">${product.name}</h3>
+                <p class="product-description">${product.description}</p>
+                <p class="product-price">${product.price} €</p>
+                <button type="button" class="btn-add" data-id="${product.id}">
+                    Ajouter au panier
+                </button>
+            </div>
         `;
         grid.appendChild(card);
     });
