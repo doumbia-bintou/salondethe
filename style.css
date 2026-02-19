@@ -695,3 +695,8 @@ h1, h2, h3 {
         text-align: center;
     }
 }
+.logo-img {
+    height: 70px;
+    width: auto;
+    margin-bottom: 8px;
+}
